@@ -1,0 +1,33 @@
+# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
+
+version: 3.0
+# Place your favicon.ico to /source directory.
+favicon: /favicon.png
+
+# Set default keywords (Use a comma to separate)
+keywords: Android , Performance
+
+# Code Highlight theme
+# Available value: normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night
+
+menu:
+  Blog: /
+  #categories: /categories
+  #archives: /archives
+  #tags: /tags
+  #Apollo: /apollo
+  #Beanstalkd: /beanstalkd
+  About: /about
+  #致莫急: /a-letter-to-mr-moji
+  #GitHub: https:github.com/mickeyouyou
+
+disqus_shortname: gracker
+google_analytics: UA-50993302-2
+
+# Static files
+#vendors: vendors
+css: css
+js: js
+images: images

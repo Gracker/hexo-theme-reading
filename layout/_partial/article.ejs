@@ -1,0 +1,28 @@
+<% if (post && index){ %>
+<li class="list-group-item title">
+    <a target="_blank" href="<%- url_for(post.path)%>"><%= post.title%></a>
+</li>
+<% } else { %>
+
+<h2 class="title"><%= post.title%></h2>
+
+<div style="margin-top: -10px;>
+        
+<%- js('js/util.js') %>
+<script>
+    if(isMobile()) {
+        loadjscssfile('../css/mobile.css', 'css');
+    } else {
+        loadjscssfile('../css/desktop.css', 'css');
+    }
+</script> 
+
+<%- toc(post.content, {"list_number":false}) %>
+<%- post.content %>
+</div>
+
+<div style="display:none">
+<script src="http://s4.cnzz.com/stat.php?id=<%= config.site_id %>&web_id=<%= config.site_id %>" language="JavaScript"></script>script>
+</div>
+
+<% } %>
