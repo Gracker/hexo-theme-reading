@@ -1,11 +1,4 @@
 <head>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6592910800642606",
-    enable_page_level_ads: true
-  });
-</script>
 	<%
 	var title = page.title;
 	if(is_home()) {
@@ -24,13 +17,12 @@
         <%- css('css/bootstrap-theme.min.css')%>
     <%} else {%>
 	   <link href="<%- url_for(theme.css) %>/main.css?v=<%- theme.version %>" rel="stylesheet" type="text/css" />
-    
         <%- js('js/util.js') %>
         <script>
             if(isMobile()) {
-                loadjscssfile('../css/mobile.css', 'css');
+                loadjscssfile('../../../../css/mobile.css', 'css');
             } else {
-                loadjscssfile('../css/desktop.css', 'css');
+                loadjscssfile('../../../../css/desktop.css', 'css');
             }
         </script> 
     <%}%>

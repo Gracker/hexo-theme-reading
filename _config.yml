@@ -5,7 +5,7 @@ version: 3.0
 favicon: /favicon.png
 
 # Set default keywords (Use a comma to separate)
-keywords: Android , Performance
+keywords: # Your blog keywords
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
@@ -21,10 +21,10 @@ menu:
   #Beanstalkd: /beanstalkd
   About: /about
   #致莫急: /a-letter-to-mr-moji
-  #GitHub: https:github.com/mickeyouyou
+  #GitHub: your github add
 
-disqus_shortname: gracker
-google_analytics: UA-50993302-2
+disqus_shortname: #your disqus shortname
+google_analytics: #your google analytics account , em : UA-50000000-2
 
 # Static files
 #vendors: vendors

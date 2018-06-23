@@ -4,16 +4,19 @@
 </li>
 <% } else { %>
 
-<h2 class="title"><%= post.title%></h2>
+<% if (post && config.generator_amp){ %>
+    <link rel="amphtml" href="<%= config.url %><%= config.root %><%= page.path %>amp/index.html">
+<% } %>
 
-<div style="margin-top: -10px;>
+<h2 class="title"><%= post.title%></h2>
+<div style="margin-top: -10px;">
         
 <%- js('js/util.js') %>
 <script>
     if(isMobile()) {
-        loadjscssfile('../css/mobile.css', 'css');
+        loadjscssfile('../../../../css/mobile.css', 'css');
     } else {
-        loadjscssfile('../css/desktop.css', 'css');
+        loadjscssfile('../../../../css/desktop.css', 'css');
     }
 </script> 
 
@@ -24,5 +27,4 @@
 <div style="display:none">
 <script src="http://s4.cnzz.com/stat.php?id=<%= config.site_id %>&web_id=<%= config.site_id %>" language="JavaScript"></script>script>
 </div>
-
 <% } %>
